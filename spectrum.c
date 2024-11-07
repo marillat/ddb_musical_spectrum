@@ -120,7 +120,7 @@ spectrum_set_refresh_interval (gpointer user_data, int interval)
 }
 
 static void
-spectrum_wavedata_listener (void *ctx, ddb_audio_data_t *data) {
+spectrum_wavedata_listener (void *ctx, const ddb_audio_data_t *data) {
     w_spectrum_t *w = ctx;
     g_assert (w->data->samples != NULL);
 
